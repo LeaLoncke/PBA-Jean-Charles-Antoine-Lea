@@ -96,12 +96,47 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* GENERAL */
+   body {
+     font-family: "loveloblack", sans-serif;
+     color: black;
+   }
 
+   /* AGENDA PAGE */
+        /* Agenda Heading */
+   .agenda-button {
+     border: solid 4px black;
+     padding:0;
+     background-color: transparent;
+     color:black;
+     font-size: 15px
+   }
+   .agenda-list {
+     display: none;
+     border: solid 4px black;
+     border-top: none;
+   }
+   .agenda-list>li {
+     list-style: none;
+   }
+   .agenda-list>li:hover {
+     color: #D8383F;
+   }
+   .agenda-button:focus ~ .agenda-list {
+     display: block;
+   }
 
+        /* Agenda Article */
+   .agenda-article-img {
+     position: relative;
+     background-image: url("../img/agenda-enfant.jpg");
+     background-position: center center;
+     background-size: cover;
+   }
 
-
-
-
+   .agenda-article>p {
+     max-width: 100%;
+   }
 
 
 
